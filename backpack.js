@@ -7,5 +7,8 @@ var weight_capacity = 10;
 
 module.exports = {
   brand: brand,
-  food: {meal1: breakfast, meal2: lunch}
+  food: {meal1: breakfast, meal2: lunch},
+  space_left : function(){
+    return weight_capacity - weight;
+  }
 }
